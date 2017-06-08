@@ -43,7 +43,7 @@ anzacbr-1496647687.878115.jpg
 
 
 ### Cameras
-Valid camera names can be found in [cameras.md](cameras.md). Camera positions and directions can be viewed on teh [livetraffic.com](https://www.livetraffic.com/desktop.html) map.
+Valid camera names can be found in [cameras.md](cameras.md). Camera positions and directions can be viewed on the [livetraffic.com](https://www.livetraffic.com/desktop.html) map.
 
 
 ### Dependencies
@@ -73,6 +73,10 @@ python gif.py -i "Anzac Bridge"
 python gif.py -i "Anzac Bridge" -o "anzacbr.gif" -f 20
 ```
 
+**GIF Sample**
+
+![GIF Sample](images/sample.gif)
+
 
 ### Dependencies
  - [imageio](https://pypi.python.org/pypi/imageio) >= 2.2.0
@@ -101,6 +105,10 @@ python mp4.py -i "Anzac Bridge" -p "anzacbr"
 
 python mp4.py -i "Anzac Bridge" -p "anzacbr" -o "anzacbr.mp4" -f 20
 ```
+
+**MP4 Sample (YouTube)**
+
+[<img src="http://img.youtube.com/vi/9KjFxJtwjWA/0.jpg" width="372" height="288"/>](https://www.youtube.com/watch?v=9KjFxJtwjWA)
 
 
 ### Dependencies
