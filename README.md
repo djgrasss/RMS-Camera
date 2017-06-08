@@ -110,6 +110,8 @@ python mp4.py -i "Anzac Bridge" -p "anzacbr" -o "anzacbr.mp4" -f 20
 
 [<img src="http://img.youtube.com/vi/9KjFxJtwjWA/0.jpg" width="372" height="288"/>](https://www.youtube.com/watch?v=9KjFxJtwjWA)
 
+YouTube heavily compressed this video. A full quality sample is availible in [images/sample.mp4](images/sample.mp4).
+
 
 ### Dependencies
  - [ffmpeg](https://ffmpeg.org) >= 3.3.1
