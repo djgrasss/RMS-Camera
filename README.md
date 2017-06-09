@@ -73,9 +73,9 @@ python gif.py -i "Anzac Bridge"
 python gif.py -i "Anzac Bridge" -o "anzacbr.gif" -f 20
 ```
 
-**GIF Sample**
+**GIF Sample - Unfiltered**
 
-![GIF Sample](images/sample.gif)
+![GIF Sample - Unfiltered](images/sample.gif)
 
 
 ### Dependencies
@@ -99,14 +99,14 @@ optional arguments:
 ```
 
 
-## Examples
+### Examples
 ```
 python mp4.py -i "Anzac Bridge" -p "anzacbr"
 
 python mp4.py -i "Anzac Bridge" -p "anzacbr" -o "anzacbr.mp4" -f 20
 ```
 
-**MP4 Sample (YouTube)**
+**MP4 Sample - Unfiltered (YouTube)**
 
 [<img src="http://img.youtube.com/vi/9KjFxJtwjWA/0.jpg" width="372" height="288"/>](https://www.youtube.com/watch?v=9KjFxJtwjWA)
 
