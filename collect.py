@@ -67,20 +67,23 @@ while True:
                     log("Saved {0}".format(currentFileName))
 
                     # Filtering
-                    if args.filtering:
-                        img = Image.open(currentFilePath)
+                    try:
+                        if args.filtering:
+                            img = Image.open(currentFilePath)
 
-                        filteredFileName = "{0}-sharpen-{1}.jpg".format(args.camera, datetime.timestamp(nowTime))
-                        filteredFilePath = args.path + "/filtered/sharpen/" + filteredFileName
-                        filteredImg = img.filter(ImageFilter.SHARPEN)
-                        filteredImg.save(filteredFilePath)
+                            filteredFileName = "{0}-sharpen-{1}.jpg".format(args.camera, datetime.timestamp(nowTime))
+                            filteredFilePath = args.path + "/filtered/sharpen/" + filteredFileName
+                            filteredImg = img.filter(ImageFilter.SHARPEN)
+                            filteredImg.save(filteredFilePath)
 
-                        filteredFileName = "{0}-detail-{1}.jpg".format(args.camera, datetime.timestamp(nowTime))
-                        filteredFilePath = args.path + "/filtered/detail/" + filteredFileName
-                        filteredImg = img.filter(ImageFilter.DETAIL)
-                        filteredImg.save(filteredFilePath)
+                            filteredFileName = "{0}-detail-{1}.jpg".format(args.camera, datetime.timestamp(nowTime))
+                            filteredFilePath = args.path + "/filtered/detail/" + filteredFileName
+                            filteredImg = img.filter(ImageFilter.DETAIL)
+                            filteredImg.save(filteredFilePath)
 
-                        log("Image filters applied")
+                            log("Image filters applied")
+                    except:
+                        log("Error applying filter")
 
                     imageCount += 1
                     oldFileName = currentFileName
